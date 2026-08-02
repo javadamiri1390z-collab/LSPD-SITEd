@@ -1,0 +1,2017 @@
+/* ==========================
+        RESET
+========================== */
+
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+
+    margin:0;
+
+    font-family:
+    Arial,
+    Tahoma,
+    sans-serif;
+
+    background:#020617;
+
+    color:white;
+
+}
+
+
+/* مخفی کردن */
+
+.hidden{
+
+    display:none!important;
+
+}
+
+
+
+
+/* ==========================
+        LOGIN PAGE
+========================== */
+
+
+.login-page{
+
+    min-height:100vh;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+
+    background:
+
+    linear-gradient(
+
+        rgba(2,6,23,.75),
+
+        rgba(2,6,23,.9)
+
+    ),
+
+
+    url("login-bg.png");
+
+
+
+    background-size:cover;
+
+
+    background-position:center;
+
+
+
+}
+
+
+
+
+
+/* کارت شیشه ای لاگین */
+
+
+.login-card{
+
+
+    width:420px;
+
+
+
+    padding:40px;
+
+
+
+    background:
+
+    rgba(15,23,42,.65);
+
+
+
+    backdrop-filter:
+
+    blur(18px);
+
+
+
+    -webkit-backdrop-filter:
+
+    blur(18px);
+
+
+
+    border:
+
+    1px solid rgba(59,130,246,.35);
+
+
+
+    border-radius:20px;
+
+
+
+    text-align:center;
+
+
+
+    box-shadow:
+
+
+    0 0 50px rgba(0,0,0,.8),
+
+
+    inset 0 0 30px rgba(37,99,235,.15);
+
+
+
+}
+
+
+
+
+
+
+
+/* Badge */
+
+
+.logo{
+
+
+    width:50px;
+
+
+    height:50px;
+
+
+    margin:auto;
+
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+
+}
+
+
+
+.logo img{
+
+
+    width:50px;
+
+
+    height:50px;
+
+
+
+    object-fit:contain;
+
+
+
+    filter:
+
+    drop-shadow(0 0 20px #2563eb);
+
+
+
+}
+
+
+
+
+
+
+
+/* متن لاگین */
+
+
+.login-card h1{
+
+
+    margin-top:20px;
+
+
+
+    font-size:32px;
+
+
+
+    letter-spacing:2px;
+
+
+
+}
+
+
+
+.login-card p{
+
+
+    color:#60a5fa;
+
+
+
+    margin-bottom:25px;
+
+
+
+}/* ==========================
+        LOGIN INPUT
+========================== */
+
+
+.login-card input{
+
+
+    width:100%;
+
+
+    padding:15px;
+
+
+    margin:10px 0;
+
+
+
+    background:
+
+    rgba(2,6,23,.85);
+
+
+
+    color:white;
+
+
+
+    border:
+
+    1px solid #1e40af;
+
+
+
+    border-radius:10px;
+
+
+
+    outline:none;
+
+
+
+}
+
+
+
+.login-card input:focus{
+
+
+    border-color:#38bdf8;
+
+
+
+    box-shadow:
+
+    0 0 15px #2563eb;
+
+
+
+}
+
+
+
+
+
+/* LOGIN BUTTON */
+
+
+.login-card button{
+
+
+    width:100%;
+
+
+
+    padding:15px;
+
+
+
+    margin-top:15px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        #2563eb,
+
+        #14b8a6
+
+    );
+
+
+
+    color:white;
+
+
+
+    border:0;
+
+
+
+    border-radius:10px;
+
+
+
+    font-size:16px;
+
+
+
+    font-weight:bold;
+
+
+
+}
+
+
+
+
+.login-card button:hover{
+
+
+    box-shadow:
+
+    0 0 25px #2563eb;
+
+
+
+    transform:scale(1.03);
+
+
+
+}
+
+
+
+
+#loginError{
+
+
+    margin-top:15px;
+
+
+    color:#f87171;
+
+
+
+}
+
+
+
+
+
+
+/* ==========================
+        HEADER
+========================== */
+
+
+header{
+
+
+    height:90px;
+
+
+
+    background:#020b18;
+
+
+
+    display:flex;
+
+
+
+    align-items:center;
+
+
+
+    justify-content:space-between;
+
+
+
+    padding:0 40px;
+
+
+
+    border-bottom:
+
+    1px solid #17365c;
+
+
+
+}
+
+
+
+
+header h1{
+
+
+    margin:0;
+
+
+
+    font-size:25px;
+
+
+
+}
+
+
+
+header p{
+
+
+    color:#60a5fa;
+
+
+
+    letter-spacing:3px;
+
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+        MAIN LAYOUT
+========================== */
+
+
+.container{
+
+
+    display:flex;
+
+
+
+    min-height:100vh;
+
+
+
+}
+
+
+
+
+
+
+aside{
+
+
+    width:280px;
+
+
+
+    background:#071426;
+
+
+
+    padding:20px;
+
+
+
+    border-left:
+
+    1px solid #17365c;
+
+
+
+}
+
+
+
+aside h2{
+
+
+    text-align:center;
+
+
+
+    color:#60a5fa;
+
+
+
+}
+
+
+
+
+
+
+aside button{
+
+
+    width:100%;
+
+
+
+    padding:12px;
+
+
+
+    margin:8px 0;
+
+
+
+    background:#2563eb;
+
+
+
+    color:white;
+
+
+
+    border:0;
+
+
+
+    border-radius:8px;
+
+
+
+    cursor:pointer;
+
+
+
+}
+
+
+
+aside button:hover{
+
+
+    background:#1d4ed8;
+
+
+
+}/* ==========================
+        MAIN CONTENT
+========================== */
+
+
+main{
+
+
+    flex:1;
+
+
+
+    padding:30px;
+
+
+
+    background:#020617;
+
+
+
+}
+
+
+
+
+
+
+/* ==========================
+        SECTION BOX
+========================== */
+
+
+section{
+
+
+    background:#0f172a;
+
+
+
+    border:
+
+    1px solid #1e3a5f;
+
+
+
+    border-radius:15px;
+
+
+
+    padding:22px;
+
+
+
+    margin-bottom:20px;
+
+
+
+    overflow:hidden;
+
+
+
+}
+
+
+
+
+section h2{
+
+
+    margin-top:0;
+
+
+
+    color:white;
+
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+        DASHBOARD
+========================== */
+
+
+.dashboard{
+
+
+    text-align:center;
+
+
+
+    min-height:140px;
+
+
+
+    display:flex;
+
+
+
+    flex-direction:column;
+
+
+
+    justify-content:center;
+
+
+
+}
+
+
+
+
+.dashboard h2{
+
+
+    font-size:32px;
+
+
+
+    color:#60a5fa;
+
+
+
+}
+
+
+
+
+
+.dashboard p{
+
+
+    color:#94a3b8;
+
+
+
+    font-size:16px;
+
+
+
+}
+
+
+
+
+
+
+/* ==========================
+      INPUTS / SELECTS
+========================== */
+
+
+input,
+select,
+textarea{
+
+
+    width:100%;
+
+
+
+    padding:13px;
+
+
+
+    margin:10px 0;
+
+
+
+    background:#020617;
+
+
+
+    color:white;
+
+
+
+    border:
+
+    1px solid #334155;
+
+
+
+    border-radius:8px;
+
+
+
+    outline:none;
+
+
+
+}
+
+
+
+
+input:focus,
+select:focus,
+textarea:focus{
+
+
+    border-color:#2563eb;
+
+
+
+    box-shadow:
+
+    0 0 12px #2563eb55;
+
+
+
+}
+
+
+
+
+
+textarea{
+
+
+    min-height:110px;
+
+
+
+    resize:vertical;
+
+
+
+}
+
+
+
+
+
+
+/* ==========================
+      CALL GENERATOR BUTTON
+========================== */
+
+
+section button{
+
+
+    width:100%;
+
+
+
+    padding:13px;
+
+
+
+    margin-top:10px;
+
+
+
+    background:#2563eb;
+
+
+
+    color:white;
+
+
+
+    border:0;
+
+
+
+    border-radius:8px;
+
+
+
+    font-size:15px;
+
+
+
+}
+
+
+
+
+section button:hover{
+
+
+    background:#1d4ed8;
+
+
+
+    box-shadow:
+
+    0 0 15px #2563eb;
+
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+        HERO HOME
+========================== */
+
+
+.hero{
+
+
+    min-height:520px;
+
+
+
+    background:
+
+
+
+    linear-gradient(
+
+        90deg,
+
+        rgba(2,6,23,.95),
+
+        rgba(2,6,23,.35)
+
+    ),
+
+
+
+    url("lspd-bg.png");
+
+
+
+    background-size:cover;
+
+
+
+    background-position:center;
+
+
+
+    display:flex;
+
+
+
+    align-items:center;
+
+
+
+    justify-content:flex-end;
+
+
+
+    padding:60px;
+
+
+
+    overflow:hidden;
+
+
+
+}
+
+
+
+
+.hero-text{
+
+
+    width:600px;
+
+
+
+    max-width:100%;
+
+
+
+    text-align:right;
+
+
+
+}
+
+
+
+
+
+.hero-text h1{
+
+
+    font-size:48px;
+
+
+
+    line-height:1.2;
+
+
+
+    margin:15px 0;
+
+
+
+    word-break:break-word;
+
+
+
+}
+
+
+
+
+.hero-text p{
+
+
+    color:#dbeafe;
+
+
+
+    font-size:17px;
+
+
+
+    line-height:1.8;
+
+
+
+}
+
+
+
+
+
+.hero-text button{
+
+
+    width:220px;
+
+
+
+    margin-top:20px;
+
+
+
+}/* ==========================
+        HOME CARDS
+========================== */
+
+
+.cards{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+
+
+    gap:15px;
+
+
+
+    padding:30px 50px;
+
+
+
+}
+
+
+
+
+
+.info-card{
+
+
+    background:#07172b;
+
+
+
+    border:
+
+    1px solid #17365c;
+
+
+
+    border-radius:12px;
+
+
+
+    padding:25px;
+
+
+
+    min-height:260px;
+
+
+
+    overflow:hidden;
+
+
+
+}
+
+
+
+
+.info-card h2{
+
+
+    color:#60a5fa;
+
+
+
+    font-size:22px;
+
+
+
+}
+
+
+
+
+.info-card p,
+.info-card li{
+
+
+    color:#cbd5e1;
+
+
+
+    line-height:1.8;
+
+
+
+}
+
+
+
+
+
+.info-card button{
+
+
+    width:100%;
+
+
+
+    margin-top:20px;
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+        APPLY SECTION
+========================== */
+
+
+.apply{
+
+
+    text-align:center;
+
+
+
+    padding:30px;
+
+
+
+}
+
+
+
+
+.apply img{
+
+
+    width:130px;
+
+
+
+    height:auto;
+
+
+
+    display:block;
+
+
+
+    margin:20px auto;
+
+
+
+    filter:
+
+    drop-shadow(0 0 20px #2563eb);
+
+
+
+}
+
+
+
+
+
+.apply button{
+
+
+    width:250px;
+
+
+
+    background:
+
+
+
+    linear-gradient(
+
+        135deg,
+
+        #2563eb,
+
+        #14b8a6
+
+    );
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+        NEWS SECTION
+========================== */
+
+
+.news{
+
+
+    background:#071426;
+
+
+
+}
+
+
+
+
+
+.news h2{
+
+
+    color:#60a5fa;
+
+
+
+}
+
+
+
+
+.news p{
+
+
+    color:#cbd5e1;
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+        MESSAGE SYSTEM
+========================== */
+
+
+#messageList{
+
+
+    margin-top:15px;
+
+
+
+}
+
+
+
+
+
+
+.message-card{
+
+
+    background:#020617;
+
+
+
+    border:
+
+    1px solid #334155;
+
+
+
+    padding:15px;
+
+
+
+    border-radius:10px;
+
+
+
+    margin-bottom:12px;
+
+
+
+}
+
+
+
+
+
+
+.message-card h4{
+
+
+    margin:0 0 10px;
+
+
+
+    color:#60a5fa;
+
+
+
+}
+
+
+
+
+
+.message-card p{
+
+
+    color:#cbd5e1;
+
+
+
+    line-height:1.7;
+
+
+
+    word-break:break-word;
+
+
+
+}
+
+
+
+
+
+
+.message-card button{
+
+
+    width:auto;
+
+
+
+    padding:8px 15px;
+
+
+
+    margin:5px;
+
+
+
+    font-size:13px;
+
+
+
+}/* ==========================
+        GLOBAL BUTTON EFFECT
+========================== */
+
+
+button{
+
+
+    transition:.25s ease;
+
+
+
+}
+
+
+
+button:hover{
+
+
+    transform:scale(1.03);
+
+
+
+    box-shadow:
+
+    0 0 18px #2563eb;
+
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+        FOOTER
+========================== */
+
+
+.footer{
+
+
+    background:#020b18;
+
+
+
+    border-top:
+
+    1px solid #17365c;
+
+
+
+    padding:25px;
+
+
+
+    text-align:center;
+
+
+
+    color:#94a3b8;
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+        TABLE STYLE
+========================== */
+
+
+table{
+
+
+    width:100%;
+
+
+
+    border-collapse:collapse;
+
+
+
+    background:#071426;
+
+
+
+}
+
+
+
+th{
+
+
+    background:#2563eb;
+
+
+
+    padding:12px;
+
+
+
+}
+
+
+
+td{
+
+
+    padding:12px;
+
+
+
+    border-bottom:
+
+    1px solid #334155;
+
+
+
+    color:#cbd5e1;
+
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+        SCROLLBAR
+========================== */
+
+
+::-webkit-scrollbar{
+
+
+    width:8px;
+
+
+
+}
+
+
+
+::-webkit-scrollbar-track{
+
+
+    background:#020617;
+
+
+
+}
+
+
+
+::-webkit-scrollbar-thumb{
+
+
+    background:#2563eb;
+
+
+
+    border-radius:10px;
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+        RESPONSIVE
+========================== */
+
+
+
+@media(max-width:1100px){
+
+
+    .cards{
+
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+
+
+
+        padding:20px;
+
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:800px){
+
+
+
+    header{
+
+
+        height:auto;
+
+
+
+        flex-direction:column;
+
+
+
+        gap:10px;
+
+
+
+        padding:20px;
+
+
+
+    }
+
+
+
+
+
+    .container{
+
+
+        flex-direction:column;
+
+
+
+    }
+
+
+
+
+
+    aside{
+
+
+        width:100%;
+
+
+
+        border-left:0;
+
+
+
+    }
+
+
+
+
+
+    main{
+
+
+        padding:15px;
+
+
+
+    }
+
+
+
+
+
+    .hero{
+
+
+        min-height:450px;
+
+
+
+        padding:30px;
+
+
+
+        justify-content:center;
+
+
+
+    }
+
+
+
+
+
+    .hero-text{
+
+
+        text-align:center;
+
+
+
+    }
+
+
+
+
+
+    .hero-text h1{
+
+
+        font-size:34px;
+
+
+
+    }
+
+
+
+
+
+    .cards{
+
+
+        grid-template-columns:
+
+        1fr;
+
+
+
+        padding:15px;
+
+
+
+    }
+
+
+
+
+
+    .login-card{
+
+
+        width:90%;
+
+
+
+        padding:30px;
+
+
+
+    }
+
+
+
+}/* ==========================
+        FINAL POLISH
+========================== */
+
+
+/* جلوگیری از بیرون زدن متن‌ها */
+
+h1,
+h2,
+h3,
+h4,
+p{
+
+    overflow-wrap:break-word;
+
+    word-break:break-word;
+
+}
+
+
+
+
+/* کارت لاگین در صفحه کوچک */
+
+@media(max-width:450px){
+
+
+    .login-card{
+
+
+        width:95%;
+
+
+        padding:25px;
+
+
+        border-radius:15px;
+
+
+    }
+
+
+
+    .logo img{
+
+
+        width:80px;
+
+
+        height:80px;
+
+
+    }
+
+
+
+    .login-card h1{
+
+
+        font-size:24px;
+
+
+        letter-spacing:1px;
+
+
+    }
+
+
+
+
+    .login-card p{
+
+
+        font-size:13px;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+/* انیمیشن ورود کارت */
+
+
+.login-card{
+
+
+    animation:
+
+    loginShow .7s ease;
+
+
+}
+
+
+
+@keyframes loginShow{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:
+
+        translateY(30px);
+
+
+
+    }
+
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:
+
+        translateY(0);
+
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* انیمیشن سکشن‌ها */
+
+
+section{
+
+
+    animation:
+
+    fadeIn .5s ease;
+
+
+}
+
+
+
+@keyframes fadeIn{
+
+
+    from{
+
+
+        opacity:0;
+
+
+        transform:
+
+        translateY(15px);
+
+
+    }
+
+
+    to{
+
+
+        opacity:1;
+
+
+        transform:
+
+        translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* لینک‌ها */
+
+
+a{
+
+
+    color:#60a5fa;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+a:hover{
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+
+/* حالت انتخاب متن */
+
+
+::selection{
+
+
+    background:#2563eb;
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+
+/* پایان فایل CSS */

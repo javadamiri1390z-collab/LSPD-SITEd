@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LSPD Vanguard Roleplay</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+        HOME PAGE
+========================= -->
+
+
+<div id="homePage">
+
+
+<header class="topbar">
+
+
+<div class="logo-area">
+
+<img src="badge.png">
+
+<div>
+
+<h1>LSPD</h1>
+
+<span>LOS SANTOS POLICE DEPARTMENT</span>
+
+</div>
+
+</div>
+
+
+
+<nav>
+
+<a class="active">HOME</a>
+
+<a>DEPARTMENTS</a>
+
+<a>SERVICES</a>
+
+<a>CAREERS</a>
+
+<a>NEWS</a>
+
+<a>CONTACT</a>
+
+
+<button onclick="openLogin()">
+
+👤 LOGIN
+
+</button>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+<section class="hero">
+
+
+<div class="hero-text">
+
+
+<h3>
+TO PROTECT AND TO SERVE
+</h3>
+
+
+<h1>
+LOS SANTOS<br>
+POLICE DEPARTMENT
+</h1>
+
+
+
+<p>
+
+The Los Santos Police Department is committed to protecting life and property,
+reducing crime, and improving the quality of life in our communities.
+
+</p>
+
+
+
+<button onclick="()">
+
+LEARN MORE 
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="cards">
+
+
+
+<div class="info-card">
+
+
+<h2>
+👥 DEPARTMENT OVERVIEW
+</h2>
+
+
+<p>
+
+The LSPD is divided into specialized units working together to keep Los Santos safe.
+
+</p>
+
+
+<ul>
+
+<li>Patrol Division</li>
+
+<li>Bravo</li>
+
+<li>SWAT</li>
+
+<li>HR</li>
+
+<li>Ar Port</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="info-card">
+
+
+<h2>
+🚨 LSPD Managment Team
+</h2>
+
+
+<p>
+🔵 ChieF of Police
+</p>
+
+
+<p>
+🔵 Assistant Chief
+</p>
+
+
+<p>
+🔵 Deputy Chief
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="info-card">
+
+
+<h2>
+🛡 PUBLIC SERVICES
+</h2>
+
+
+<p>
+
+We offer a variety of services to help our community.
+
+</p>
+
+
+<ul>
+
+<li>Report a Crime</li>
+
+<li>File a Police Report</li>
+
+<li>Anonymous Tips</li>
+
+<li>Community Programs</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="info-card apply">
+
+
+<h2>
+👮 JOIN LSPD
+</h2>
+
+
+<p>
+برای پیوستن به نیروهای LSPD روی تینک زیر کلیک کنید 
+</p>
+
+
+<img src="badge.png" width="120">
+
+
+<button onclick="openLogin()">
+
+JOIN LSPD
+
+</button>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- =========================
+        LOGIN PAGE
+========================= -->
+
+
+<div id="loginPage" class="login-page hidden">
+
+
+<div class="login-card">
+
+
+<div class="logo">
+<h3>
+
+LSPD
+
+
+</div>
+
+
+<h1>
+Vanguard Roleplay
+</h1>
+
+
+<p>
+مرکز فرماندهی
+</p>
+
+
+
+<input
+id="username"
+type="text"
+placeholder="Username">
+
+
+
+<input
+id="password"
+type="password"
+placeholder="Password">
+
+
+
+<button onclick="login()">
+
+ورود
+
+</button>
+
+
+
+<div id="loginError"></div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- =========================
+        DASHBOARD
+========================= -->
+
+
+<div id="app" class="hidden">
+
+
+
+<header class="dashboard-header">
+
+
+<h1>
+Department Command Center
+</h1>
+
+
+<p>
+VANGUARD
+</p>
+
+
+</header>
+
+
+
+
+
+
+
+<div class="container">
+
+
+
+
+
+<aside>
+
+
+
+<h2>
+Departments
+</h2>
+
+
+
+<button onclick="selectDept('LSPD Department')">
+
+LSPD Department
+
+</button>
+
+
+
+<button onclick="selectDept('Sheriff Department')">
+
+Sheriff Department
+
+</button>
+
+
+
+<button onclick="selectDept('ARMY Department')">
+
+ARMY Department
+
+</button>
+
+
+
+<button onclick="selectDept('EMS / Medical')">
+
+EMS / Medical
+
+</button>
+
+
+
+<button onclick="selectDept('Federal Department')">
+
+Federal Department
+
+</button>
+
+
+
+<button onclick="selectDept('DOJ Department')">
+
+DOJ Department
+
+</button>
+
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<h2>
+Custom Messages
+</h2>
+
+
+
+<input
+id="msgTitle"
+placeholder="Message Name">
+
+
+
+<textarea
+id="msgText"
+placeholder="Write your message here...">
+</textarea>
+
+
+
+<button onclick="addMessage()">
+
+➕ Add Message
+
+</button>
+
+
+
+
+<div id="messageList"></div>
+
+
+
+
+</aside>
+
+
+
+
+
+
+
+
+
+<main>
+
+
+
+
+
+<section class="dashboard">
+
+
+<h2 id="deptTitle">
+
+Dashboard
+
+</h2>
+
+
+
+<p>
+
+Select a department
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+Department Call Generator
+</h2>
+
+
+
+<select id="from">
+
+<option>
+LSPD Department
+</option>
+
+</select>
+
+
+
+
+
+<select id="to">
+
+<option>
+LSPD Department
+</option>
+
+<option>
+Sheriff Department
+</option>
+
+<option>
+ARMY Department
+</option>
+
+<option>
+EMS / Medical
+</option>
+
+<option>
+Fedral Department
+</option>
+
+<option
+Doj Department
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+<select id="code">
+
+
+<option>
+10-8 Available
+</option>
+
+
+<option>
+10-7 Out Of Service
+</option>
+
+
+<option>
+DAR HAL 10-97 BE 10-20 ST
+</option>
+
+
+<option>
+10-20 Location
+</option>
+
+
+
+</select>
+
+
+
+
+
+
+<button onclick="generateCall()">
+
+Generate Call
+
+</button>
+
+
+
+
+
+
+<textarea id="result"></textarea>
+
+
+
+
+
+<button onclick="copyText()">
+
+Copy
+
+</button>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+News & Updates
+</h2>
+
+
+<p>
+No updates available
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+</main>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
